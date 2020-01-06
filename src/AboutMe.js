@@ -11,13 +11,13 @@ const at = <FontAwesomeIcon icon={faAt} />
 
 const AboutMe = () => {
   return (
-    <div>
+    <div className="abCont">
       <MDBJumbotron
         fluid
+        className="abMeJum"
         style={{
           display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center'
+          justifyContent: 'center'
         }}
       >
         <MDBContainer>
@@ -26,34 +26,25 @@ const AboutMe = () => {
             <hr />
           </h2>
           <div>
-            <h3>{at} harrisonkhancock@gmail.com</h3>
+            <h3 className="gmail">{at} harrisonkhancock@gmail.com</h3>
             <a
               target="_blank"
+              className="icon"
               rel="noopener noreferrer"
               href="https://www.linkedin.com/in/harrison-hancock"
-              style={{
-                fontSize: '3rem',
-                color: 'black',
-                textDecoration: 'none'
-              }}
             >
               {linkedin}
             </a>
             <a
               target="_blank"
               rel="noopener noreferrer"
+              className="icon"
               href="https://github.com/Shokupanman"
-              style={{
-                fontSize: '3rem',
-                color: 'black',
-                textDecoration: 'none',
-                marginLeft: '3rem'
-              }}
             >
               {github}
             </a>
           </div>
-          <p style={{ maxWidth: '45vw', fontSize: '1.7rem' }}>
+          <p className="abMe">
             I am a young and excited Full Stack Developer looking to soak up as
             much as I can! New experiences are always a big drive for me, for
             example I had two years of voulenteer service in Japan and did

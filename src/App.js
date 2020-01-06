@@ -94,11 +94,13 @@ const App = () => {
           </section>
         </div>
       </ScrollAnimation>
-      <ScrollAnimation animateIn="fadeInLeft" delay="3s">
-        <AboutMe />
-      </ScrollAnimation>
-      <MyLanguages />
-      <Projects />
+      <footer className="mq">
+        <ScrollAnimation animateIn="fadeInLeft" delay="3s">
+          <AboutMe />
+        </ScrollAnimation>
+        <MyLanguages />
+        <Projects />
+      </footer>
     </div>
   )
 }

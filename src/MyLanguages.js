@@ -7,16 +7,31 @@ import {
   MDBCol
 } from 'mdbreact'
 import ScrollAnimation from 'react-animate-on-scroll'
+import './MyLanguages.scss'
 
 const MyLanguages = () => {
   return (
     <div>
-      <header>
-        <h1 style={{ fontSize: '3rem', textDecoration: 'underline' }}>
+      <header
+        sytle={{
+          width: '100vw'
+        }}
+      >
+        <h1
+          style={{
+            fontSize: '3rem',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center'
+          }}
+        >
           My Technologies
         </h1>
       </header>
-      <section style={{ display: 'flex', flexWrap: 'wrap' }}>
+      <section
+        className="container"
+        style={{ display: 'flex', flexWrap: 'wrap' }}
+      >
         <ScrollAnimation animateIn="fadeInLeft" duration=".2s" delay="3s">
           <MDBCol>
             <MDBCard
