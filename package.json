@@ -2,6 +2,7 @@
   "name": "my_port",
   "version": "0.1.0",
   "proxy": "http://localhost:4444",
+  "main": "Server/Server.js",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.26",
