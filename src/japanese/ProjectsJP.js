@@ -171,7 +171,7 @@ const ProjectsJP = () => {
                     style={{
                       height: '30vh',
                       width: '15vw',
-                      marginLeft: '20vh',
+                      marginLeft: '12vw',
                     }}
                   />
                 </a>
@@ -219,8 +219,8 @@ const ProjectsJP = () => {
                     waves
                     style={{
                       height: '30vh',
-                      width: '15vw',
-                      marginLeft: '20vh',
+                      MaxWidth: '15vw',
+                      marginLeft: '12vw',
                     }}
                   />
                 </a>
@@ -268,7 +268,7 @@ const ProjectsJP = () => {
                     waves
                     style={{
                       height: '30vh',
-                      width: '35vw',
+                      maxWidth: '35vw',
                     }}
                   />
                 </a>

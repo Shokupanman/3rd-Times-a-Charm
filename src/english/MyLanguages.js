@@ -37,7 +37,7 @@ const MyLanguages = () => {
         className="container"
         style={{ display: 'flex', flexWrap: 'wrap', backgroundColor: 'black' }}
       >
-        <ScrollAnimation animateIn="fadeInLeft" duration=".2s" delay="3s">
+        <ScrollAnimation animateIn="fadeIn" duration=".2s" delay="3s">
           <MDBCol>
             <MDBCard
               style={{
@@ -70,7 +70,7 @@ const MyLanguages = () => {
             </MDBCard>
           </MDBCol>
         </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInUp" duration=".3s" delay="4s">
+        <ScrollAnimation animateIn="fadeIn" duration=".3s" delay="4s">
           <MDBCol>
             <MDBCard
               style={{
@@ -103,7 +103,7 @@ const MyLanguages = () => {
             </MDBCard>
           </MDBCol>
         </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInDown" duration=".4s" delay="5s">
+        <ScrollAnimation animateIn="fadeIn" duration=".4s" delay="5s">
           <MDBCol>
             <MDBCard
               style={{
@@ -136,7 +136,7 @@ const MyLanguages = () => {
             </MDBCard>
           </MDBCol>
         </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInRight" duration=".5s" delay="6s">
+        <ScrollAnimation animateIn="fadeIn" duration=".5s" delay="6s">
           <MDBCol>
             <MDBCard
               style={{
@@ -202,7 +202,7 @@ const MyLanguages = () => {
             </MDBCard>
           </MDBCol>
         </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInLeft" duration=".2s" delay="8s">
+        <ScrollAnimation animateIn="fadeIn" duration=".2s" delay="8s">
           <MDBCol>
             <MDBCard
               style={{
@@ -235,7 +235,7 @@ const MyLanguages = () => {
             </MDBCard>
           </MDBCol>
         </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInLeft" duration=".2s" delay="8s">
+        <ScrollAnimation animateIn="fadeIn" duration=".2s" delay="8s">
           <MDBCol>
             <MDBCard
               style={{
@@ -268,7 +268,7 @@ const MyLanguages = () => {
             </MDBCard>
           </MDBCol>
         </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInDown" duration=".2s" delay="8s">
+        <ScrollAnimation animateIn="fadeIn" duration=".2s" delay="8s">
           <MDBCol>
             <MDBCard
               style={{
@@ -301,7 +301,7 @@ const MyLanguages = () => {
             </MDBCard>
           </MDBCol>
         </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInUp" duration=".2s" delay="8s">
+        <ScrollAnimation animateIn="fadeIn" duration=".2s" delay="8s">
           <MDBCol>
             <MDBCard
               style={{
@@ -329,6 +329,72 @@ const MyLanguages = () => {
                   }}
                 >
                   Redux
+                </MDBCardTitle>
+              </MDBCardBody>
+            </MDBCard>
+          </MDBCol>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="fadeIn" duration=".2s" delay="8s">
+          <MDBCol>
+            <MDBCard
+              style={{
+                width: '22rem',
+                backgroundColor: 'black',
+                marginLeft: '1rem',
+              }}
+            >
+              <MDBCardImage
+                className="img-fluid"
+                src="https://lh3.googleusercontent.com/proxy/Svx_MB5Cp-OGH91-f-IIj92ZDO-gH2WDnGhj64aiz0fb4EKvKUEfNFtCokzCCVSebbsknrUKOAPDwFhtcbbpRxEVgF4GYcmZCvTEUNlQKQ"
+                waves
+                style={{ maxHeight: '35vh', width: '22rem' }}
+              />
+              <MDBCardBody>
+                <MDBCardTitle
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    fontSize: '2rem',
+                    paddingBottom: '1rem',
+                    backgroundColor: 'black',
+                    color: 'white',
+                  }}
+                >
+                  C#
+                </MDBCardTitle>
+              </MDBCardBody>
+            </MDBCard>
+          </MDBCol>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="fadeIn" duration=".2s" delay="8s">
+          <MDBCol>
+            <MDBCard
+              style={{
+                width: '22rem',
+                backgroundColor: 'black',
+                marginLeft: '1rem',
+              }}
+            >
+              <MDBCardImage
+                className="img-fluid"
+                src="https://188qm22wef3q4c2s7q1bp2wu-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/react-native-mobile-app-development-agency.png"
+                waves
+                style={{ maxHeight: '35vh', width: '22rem' }}
+              />
+              <MDBCardBody>
+                <MDBCardTitle
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    fontSize: '2rem',
+                    paddingBottom: '1rem',
+                    backgroundColor: 'black',
+                    color: 'white',
+                  }}
+                >
+                  React Native
                 </MDBCardTitle>
               </MDBCardBody>
             </MDBCard>
