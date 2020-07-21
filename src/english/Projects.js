@@ -13,12 +13,13 @@ import './Projects.scss'
 
 const Projects = () => {
   return (
-    <>
+    <div style={{ backgroundColor: 'black' }}>
       <header
         style={{
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
+          backgroundColor: 'black',
         }}
       >
         <h2
@@ -27,11 +28,11 @@ const Projects = () => {
             fontSize: '5rem',
             width: '85vw',
             margin: 0,
+            color: 'white',
           }}
         >
           Projects
         </h2>
-        <h5 className="expl">*click image to link to the githubs*</h5>
       </header>
       <div className="containerz">
         <section
@@ -40,6 +41,7 @@ const Projects = () => {
             justifyContent: 'center',
             flexDirection: 'row',
             margin: '4rem',
+            backgroundColor: 'black',
           }}
         >
           <ScrollAnimation animateIn="fadeInLeft">
@@ -131,7 +133,7 @@ const Projects = () => {
           </ScrollAnimation>
         </section>
       </div>
-    </>
+    </div>
   )
 }
 

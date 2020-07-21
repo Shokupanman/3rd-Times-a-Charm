@@ -20,8 +20,28 @@ const App = () => {
     setEnglish((english = true))
     setJapanese((japanese = false))
   }
+
+  const MyName = () => {
+    if (japanese) {
+      return (
+        <div className="typewriter-text" style={{ fontSize: '8vh' }}>
+          ハンコック　ハリソン
+        </div>
+      )
+    } else if (english) {
+      return <div className="typewriter-text">Harrison Hancock</div>
+    }
+  }
+
+  const BiL = () => {
+    if (japanese) {
+      return <h1 className="footerbit">　二か国語</h1>
+    } else if (english) {
+      return <h1 className="footerbit">Bilingual</h1>
+    }
+  }
   return (
-    <div>
+    <div style={{ backgroundColor: 'black' }}>
       <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
         <div
           style={{
@@ -40,6 +60,7 @@ const App = () => {
                 width: '2.5vw',
                 height: '5vh',
               }}
+              onClick={() => jpnSwitch()}
             >
               <img
                 src="https://img.freepik.com/free-vector/illustration-japan-flag_53876-27128.jpg?size=626&ext=jpg"
@@ -62,6 +83,7 @@ const App = () => {
                 width: '2.5vw',
                 height: '5vh',
               }}
+              onClick={() => engSwitch()}
             >
               <img
                 src="https://miro.medium.com/max/2470/0*o0-6o1W1DKmI5LbX.png"
@@ -86,14 +108,14 @@ const App = () => {
               }}
             >
               <div className="typewriter">
-                <div className="typewriter-text">Harrison Hancock</div>
+                <MyName />
               </div>
             </MDBRow>
           </section>
           <section>
             <footer className="footer">
               <MDBAnimation type="slideInUp" delay=".2s">
-                <h1 className="footerbit">Bilingual</h1>
+                <BiL />
               </MDBAnimation>
               <MDBAnimation type="slideInLeft" delay=".5s">
                 <h1 className="footerbit">Web</h1>
