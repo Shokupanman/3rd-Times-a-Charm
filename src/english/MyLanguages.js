@@ -4,17 +4,18 @@ import {
   MDBCardBody,
   MDBCardImage,
   MDBCardTitle,
-  MDBCol
+  MDBCol,
 } from 'mdbreact'
 import ScrollAnimation from 'react-animate-on-scroll'
 import './MyLanguages.scss'
 
 const MyLanguages = () => {
   return (
-    <div>
+    <div style={{ backgroundColor: 'black' }}>
       <header
         sytle={{
-          width: '100vw'
+          width: '100vw',
+          backgroundColor: 'black',
         }}
       >
         <h1
@@ -22,15 +23,19 @@ const MyLanguages = () => {
             fontSize: '3rem',
             display: 'flex',
             justifyContent: 'center',
-            alignItems: 'center'
+            alignItems: 'center',
+            backgroundColor: 'black',
+            color: 'white',
+            margin: 0,
           }}
         >
           My Technologies
         </h1>
       </header>
+      <hr />
       <section
         className="container"
-        style={{ display: 'flex', flexWrap: 'wrap' }}
+        style={{ display: 'flex', flexWrap: 'wrap', backgroundColor: 'black' }}
       >
         <ScrollAnimation animateIn="fadeInLeft" duration=".2s" delay="3s">
           <MDBCol>
@@ -38,7 +43,7 @@ const MyLanguages = () => {
               style={{
                 width: '22rem',
                 backgroundColor: 'black',
-                marginLeft: '1rem'
+                marginLeft: '1rem',
               }}
             >
               <MDBCardImage
@@ -56,7 +61,7 @@ const MyLanguages = () => {
                     fontSize: '2rem',
                     paddingBottom: '1rem',
                     backgroundColor: 'black',
-                    color: 'white'
+                    color: 'white',
                   }}
                 >
                   JavaScript
@@ -71,7 +76,7 @@ const MyLanguages = () => {
               style={{
                 width: '22rem',
                 backgroundColor: 'black',
-                marginLeft: '1rem'
+                marginLeft: '1rem',
               }}
             >
               <MDBCardImage
@@ -89,7 +94,7 @@ const MyLanguages = () => {
                     fontSize: '2rem',
                     paddingBottom: '1rem',
                     backgroundColor: 'black',
-                    color: 'white'
+                    color: 'white',
                   }}
                 >
                   React
@@ -104,7 +109,7 @@ const MyLanguages = () => {
               style={{
                 width: '22rem',
                 backgroundColor: 'black',
-                marginLeft: '1rem'
+                marginLeft: '1rem',
               }}
             >
               <MDBCardImage
@@ -122,7 +127,7 @@ const MyLanguages = () => {
                     fontSize: '2rem',
                     paddingBottom: '1rem',
                     backgroundColor: 'black',
-                    color: 'white'
+                    color: 'white',
                   }}
                 >
                   CSS & Html
@@ -137,7 +142,7 @@ const MyLanguages = () => {
               style={{
                 width: '22rem',
                 backgroundColor: 'black',
-                marginLeft: '1rem'
+                marginLeft: '1rem',
               }}
             >
               <MDBCardImage
@@ -155,7 +160,7 @@ const MyLanguages = () => {
                     fontSize: '2rem',
                     paddingBottom: '1rem',
                     backgroundColor: 'black',
-                    color: 'white'
+                    color: 'white',
                   }}
                 >
                   BootStrap and Material Design
@@ -170,7 +175,7 @@ const MyLanguages = () => {
               style={{
                 width: '22rem',
                 backgroundColor: 'black',
-                marginLeft: '1rem'
+                marginLeft: '1rem',
               }}
             >
               <MDBCardImage
@@ -188,7 +193,7 @@ const MyLanguages = () => {
                     fontSize: '2rem',
                     paddingBottom: '1rem',
                     backgroundColor: 'black',
-                    color: 'white'
+                    color: 'white',
                   }}
                 >
                   Green Sock
@@ -203,7 +208,7 @@ const MyLanguages = () => {
               style={{
                 width: '22rem',
                 backgroundColor: 'black',
-                marginLeft: '1rem'
+                marginLeft: '1rem',
               }}
             >
               <MDBCardImage
@@ -221,7 +226,7 @@ const MyLanguages = () => {
                     fontSize: '2rem',
                     paddingBottom: '1rem',
                     backgroundColor: 'black',
-                    color: 'white'
+                    color: 'white',
                   }}
                 >
                   PostGres SQL
@@ -236,7 +241,7 @@ const MyLanguages = () => {
               style={{
                 width: '22rem',
                 backgroundColor: 'black',
-                marginLeft: '1rem'
+                marginLeft: '1rem',
               }}
             >
               <MDBCardImage
@@ -254,7 +259,7 @@ const MyLanguages = () => {
                     fontSize: '2rem',
                     paddingBottom: '1rem',
                     backgroundColor: 'black',
-                    color: 'white'
+                    color: 'white',
                   }}
                 >
                   Google Maps API
@@ -269,7 +274,7 @@ const MyLanguages = () => {
               style={{
                 width: '22rem',
                 backgroundColor: 'black',
-                marginLeft: '1rem'
+                marginLeft: '1rem',
               }}
             >
               <MDBCardImage
@@ -287,7 +292,7 @@ const MyLanguages = () => {
                     fontSize: '2rem',
                     paddingBottom: '1rem',
                     backgroundColor: 'black',
-                    color: 'white'
+                    color: 'white',
                   }}
                 >
                   Node
@@ -302,7 +307,7 @@ const MyLanguages = () => {
               style={{
                 width: '22rem',
                 backgroundColor: 'black',
-                marginLeft: '1rem'
+                marginLeft: '1rem',
               }}
             >
               <MDBCardImage
@@ -320,7 +325,7 @@ const MyLanguages = () => {
                     fontSize: '2rem',
                     paddingBottom: '1rem',
                     backgroundColor: 'black',
-                    color: 'white'
+                    color: 'white',
                   }}
                 >
                   Redux

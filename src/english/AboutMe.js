@@ -17,16 +17,22 @@ const AboutMe = () => {
         className="abMeJum"
         style={{
           display: 'flex',
-          justifyContent: 'center'
+          justifyContent: 'center',
+          backgroundColor: 'black',
         }}
       >
         <MDBContainer>
-          <h2 className="display-4" style={{ fontSize: '5rem' }}>
+          <h2
+            className="display-4"
+            style={{ fontSize: '5rem', color: 'white' }}
+          >
             About Me
             <hr />
           </h2>
           <div>
-            <h3 className="gmail">{at} harrisonkhancock@gmail.com</h3>
+            <h3 className="gmail" style={{ color: 'white' }}>
+              {at} harrisonkhancock@gmail.com
+            </h3>
             <a
               target="_blank"
               className="icon"

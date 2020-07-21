@@ -1,13 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './App.scss'
-import img from './assets/backgroundImage.jpg'
-import { MDBAnimation, MDBRow } from 'mdbreact'
-import AboutMe from './AboutMe'
-import Projects from './Projects'
-import MyLanguages from './MyLanguages'
+import img from './assets/bckImg.jpg'
+import { MDBAnimation, MDBRow, MDBBtn } from 'mdbreact'
+import AboutMe from './english/AboutMe'
+import Projects from './english/Projects'
+import MyLanguages from './english/MyLanguages'
 import ScrollAnimation from 'react-animate-on-scroll'
 
 const App = () => {
+  let [japanese, setJapanese] = useState(false)
+  let [english, setEnglish] = useState(true)
+
+  const jpnSwitch = () => {
+    setJapanese((japanese = true))
+    setEnglish((english = false))
+  }
+
+  const engSwitch = () => {
+    setEnglish((english = true))
+    setJapanese((japanese = false))
+  }
   return (
     <div>
       <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
@@ -16,66 +28,65 @@ const App = () => {
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'space-between',
-            height: '100vh'
+            height: '100vh',
           }}
         >
           <section>
             <img src={img} alt="" className="bg" />
-            <MDBRow style={{ display: 'flex', flexDirection: 'row' }}>
-              <div style={{ display: 'flex', flexDirection: 'row' }}>
-                <MDBAnimation type="flipInY" duration="1s" delay=".3s">
-                  <h1 style={{ margin: '0', fontSize: '7rem' }}>H</h1>
-                </MDBAnimation>
-                <MDBAnimation type="flipInY" duration="1s" delay=".3s">
-                  <h1 style={{ margin: '0', fontSize: '7rem' }}>A</h1>
-                </MDBAnimation>
-                <MDBAnimation type="flipInY" duration="1s" delay=".3s">
-                  <h1 style={{ margin: '0', fontSize: '7rem' }}>R</h1>
-                </MDBAnimation>
-                <MDBAnimation type="flipInY" duration="1s" delay=".4s">
-                  <h1 style={{ margin: '0', fontSize: '7rem' }}>R</h1>
-                </MDBAnimation>
-                <MDBAnimation type="flipInY" duration="1s" delay=".5s">
-                  <h1 style={{ margin: '0', fontSize: '7rem' }}>I</h1>
-                </MDBAnimation>
-                <MDBAnimation type="flipInY" duration="1s" delay=".6s">
-                  <h1 style={{ margin: '0', fontSize: '7rem' }}>S</h1>
-                </MDBAnimation>
-                <MDBAnimation type="flipInY" duration="1s" delay=".7s">
-                  <h1 style={{ margin: '0', fontSize: '7rem' }}>O</h1>
-                </MDBAnimation>
-                <MDBAnimation type="flipInY" duration="1s" delay=".8s">
-                  <h1 style={{ margin: '0', fontSize: '7rem' }}>N</h1>
-                </MDBAnimation>
-              </div>
-              <div
+            <h3 style={{ color: 'white' }}>日本語</h3>
+            <MDBBtn
+              style={{
+                borderRadius: '100%',
+                width: '2.5vw',
+                height: '5vh',
+              }}
+            >
+              <img
+                src="https://img.freepik.com/free-vector/illustration-japan-flag_53876-27128.jpg?size=626&ext=jpg"
+                alt=""
                 style={{
+                  maxHeight: '4rem',
+                  maxWidth: '4rem',
                   display: 'flex',
-                  flexDirection: 'row',
-                  margin: '2rem'
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  alignContent: 'center',
+                  marginLeft: '-1.3vw',
                 }}
-              >
-                <MDBAnimation type="flipInY" duration="1s" delay=".9s">
-                  <h1 style={{ margin: '0', fontSize: '7rem' }}>H</h1>
-                </MDBAnimation>
-                <MDBAnimation type="flipInY" duration="1s" delay="1s">
-                  <h1 style={{ margin: '0', fontSize: '7rem' }}>A</h1>
-                </MDBAnimation>
-                <MDBAnimation type="flipInY" duration="1s" delay="1.1s">
-                  <h1 style={{ margin: '0', fontSize: '7rem' }}>N</h1>
-                </MDBAnimation>
-                <MDBAnimation type="flipInY" duration="1s" delay="1.2s">
-                  <h1 style={{ margin: '0', fontSize: '7rem' }}>C</h1>
-                </MDBAnimation>
-                <MDBAnimation type="flipInY" duration="1s" delay="1.3s">
-                  <h1 style={{ margin: '0', fontSize: '7rem' }}>O</h1>
-                </MDBAnimation>
-                <MDBAnimation type="flipInY" duration="1s" delay="1.4s">
-                  <h1 style={{ margin: '0', fontSize: '7rem' }}>C</h1>
-                </MDBAnimation>
-                <MDBAnimation type="flipInY" duration="1s" delay="1.5s">
-                  <h1 style={{ margin: '0', fontSize: '7rem' }}>K</h1>
-                </MDBAnimation>
+              />
+            </MDBBtn>
+            <h3 style={{ color: 'white' }}>English</h3>
+            <MDBBtn
+              style={{
+                borderRadius: '100%',
+                width: '2.5vw',
+                height: '5vh',
+              }}
+            >
+              <img
+                src="https://miro.medium.com/max/2470/0*o0-6o1W1DKmI5LbX.png"
+                alt=""
+                style={{
+                  maxHeight: '4rem',
+                  maxWidth: '4rem',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  alignContent: 'center',
+                  marginLeft: '-1.3vh',
+                }}
+              />
+            </MDBBtn>
+
+            <MDBRow
+              style={{
+                display: 'flex',
+                justifyContent: 'center',
+                marginTop: '-3vh',
+              }}
+            >
+              <div className="typewriter">
+                <div className="typewriter-text">Harrison Hancock</div>
               </div>
             </MDBRow>
           </section>

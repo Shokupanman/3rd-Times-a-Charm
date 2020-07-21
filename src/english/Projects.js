@@ -4,10 +4,10 @@ import {
   MDBCardTitle,
   MDBCardImage,
   MDBCardBody,
-  MDBCard
+  MDBCard,
 } from 'mdbreact'
-import dreamImg from './assets/dreamCatchSnip.PNG'
-import SCImg from './assets/SCimg.PNG'
+import dreamImg from '../assets/dreamCatchSnip.PNG'
+import SCImg from '../assets/SCimg.PNG'
 import ScrollAnimation from 'react-animate-on-scroll'
 import './Projects.scss'
 
@@ -18,7 +18,7 @@ const Projects = () => {
         style={{
           display: 'flex',
           justifyContent: 'center',
-          alignItems: 'center'
+          alignItems: 'center',
         }}
       >
         <h2
@@ -26,7 +26,7 @@ const Projects = () => {
           style={{
             fontSize: '5rem',
             width: '85vw',
-            margin: 0
+            margin: 0,
           }}
         >
           Projects
@@ -39,7 +39,7 @@ const Projects = () => {
             display: 'flex',
             justifyContent: 'center',
             flexDirection: 'row',
-            margin: '4rem'
+            margin: '4rem',
           }}
         >
           <ScrollAnimation animateIn="fadeInLeft">
@@ -54,7 +54,7 @@ const Projects = () => {
                     backgroundColor: 'black',
                     height: '8vh',
                     margin: 0,
-                    color: 'white'
+                    color: 'white',
                   }}
                 >
                   Dream Catcher
@@ -76,7 +76,7 @@ const Projects = () => {
                   style={{
                     margin: '.5rem',
                     border: 'black double .2rem',
-                    padding: '.23rem'
+                    padding: '.23rem',
                   }}
                 >
                   This was my first project, it was meant to help people connect
@@ -98,7 +98,7 @@ const Projects = () => {
                     backgroundColor: 'black',
                     height: '8vh',
                     margin: 0,
-                    color: 'white'
+                    color: 'white',
                   }}
                 >
                   Social Coders
@@ -120,7 +120,7 @@ const Projects = () => {
                   style={{
                     margin: '.5rem',
                     border: 'black double .2rem',
-                    padding: '.23rem'
+                    padding: '.23rem',
                   }}
                 >
                   A social media platform made by coders for coders *hosting in

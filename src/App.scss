@@ -30,6 +30,7 @@ html {
 .footerbit {
   font-size: 3rem;
   margin-left: 2rem;
+  color: white;
 }
 
 @media (max-width: 1200px) {
@@ -49,4 +50,43 @@ html {
   //   flex-direction: column;
   //   margin-left: 20rem;
   // }
+}
+
+.typewriter {
+  font-family: Courier, monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.typewriter-text {
+  display: inline-block;
+  overflow: hidden;
+  letter-spacing: 2px;
+  animation: typing 3s steps(30, end), blink 0.75s step-end infinite;
+  white-space: nowrap;
+  font-size: 10vh;
+  font-weight: 700;
+  border-right: 4px solid orange;
+  box-sizing: border-box;
+  color: white;
+}
+
+@keyframes typing {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
 }
