@@ -1,6 +1,6 @@
 import React from 'react'
 import { MDBJumbotron, MDBContainer } from 'mdbreact'
-import './AboutMe.scss'
+import './AboutMeJP.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faAt } from '@fortawesome/free-solid-svg-icons'
@@ -9,7 +9,7 @@ const github = <FontAwesomeIcon icon={faGithubSquare} />
 const linkedin = <FontAwesomeIcon icon={faLinkedin} />
 const at = <FontAwesomeIcon icon={faAt} />
 
-const AboutMe = () => {
+const AboutMeJP = () => {
   return (
     <div className="abCont">
       <MDBJumbotron
@@ -26,7 +26,7 @@ const AboutMe = () => {
             className="display-4"
             style={{ fontSize: '5rem', color: 'white' }}
           >
-            About Me
+            私について
             <hr />
           </h2>
           <div>
@@ -51,13 +51,7 @@ const AboutMe = () => {
             </a>
           </div>
           <p className="abMe">
-            I am a young and excited Full Stack Developer looking to soak up as
-            much as I can! New experiences are always a big drive for me, for
-            example I had two years of voulenteer service in Japan and did
-            Japanese Translation afterwards in Hawaii. I have a passion for
-            coding because it is an ever growing, ever learning enviroment that
-            harbors true innovation As a Developer I am finally 'Living the
-            Dream'!
+            アピールポイントはパソコンの言語については理解しています。日本語も話すことができます。人と話すことがとても好きで人の心を読むことが特技です。私の趣味はゲームです。小さな頃からどのようにしてゲームをプログラムしているのかとても興味を持ちました。そして自分のゲームやプログラムを作りたいと思うようになりました。デブマウンテンに入り、プログラミングを学び、自分の作りたいものを作れば作るほど自信になりました。パソコンのプログラムは複雑ですが、達成するために努力をすれば結果はついてきますので、努力して働きたいと考えています。　
           </p>
         </MDBContainer>
       </MDBJumbotron>
@@ -65,4 +59,4 @@ const AboutMe = () => {
   )
 }
 
-export default AboutMe
+export default AboutMeJP
